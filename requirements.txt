@@ -6,3 +6,4 @@ instagram-private-api==1.6.0
 gnureadline>=8.0.0; platform_system != "Windows"
 pyreadline==2.1; platform_system == "Windows"
 urllib3>=1.26.5 # not directly required, pinned by Snyk to avoid a vulnerability
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
