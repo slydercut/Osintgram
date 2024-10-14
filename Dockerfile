@@ -1,4 +1,4 @@
-FROM python:3.12.0a3-slim-bullseye as build
+FROM python:3.12.7-slim-bullseye as build
 WORKDIR /wheels
 RUN apk add --no-cache \
     ncurses-dev \
@@ -7,7 +7,7 @@ COPY docker_reqs.txt /opt/osintgram/requirements.txt
 RUN pip3 wheel -r /opt/osintgram/requirements.txt
 
 
-FROM python:3.12.0a3-slim-bullseye
+FROM python:3.12.7-slim-bullseye
 WORKDIR /home/osintgram
 RUN adduser -D osintgram
 
